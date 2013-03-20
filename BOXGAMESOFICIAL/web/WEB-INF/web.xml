@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>servletController</servlet-name>
+        <servlet-class>br.com.bgames.controller.servletController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PreencheFormAtualAuto</servlet-name>
+        <servlet-class>br.com.bgames.controller.PreecherFormDeAtualizacaoAutomatico</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CadAtualiza</servlet-name>
+        <servlet-class>br.com.bgames.controller.CadAtualiza</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servletController</servlet-name>
+        <url-pattern>/servletController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PreencheFormAtualAuto</servlet-name>
+        <url-pattern>/PreencheFormAtualAuto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CadAtualiza</servlet-name>
+        <url-pattern>/CadAtualiza</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
